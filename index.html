@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShieldHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section id="home">
+        <div class="homepage">
+            <video autoplay loop muted plays-inline class="backvideo">
+                <source src="newbgvideo.mov" type="video/mp4" />
+            </video>
+            <nav id="navbar">
+                <!-- LOGO -->
+                <div class="logoimg">
+                    <img src="logo2.png">
+                    <div class="logo">CyberShieldHub</div>
+                </div>
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+                    <!-- USING CHECKBOX HACK -->
+                    <input type="checkbox" id="checkbox_toggle" />
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                    <!-- NAVIGATION MENUS -->
+                    <div class="menu">
+                        <li><a href="#home" class="active">HOME</a></li>
+                        <li><a href="#generators">GENERATORS</a></li>
+                        <li><a href="#About">ABOUT</a></li>
+                        <li><a href="#Contact">CONTACT</a></li>
+                    </div>
+                </ul>
+            </nav>
+            <div class="content">
+                <h1>CyberShieldHub</h1>
+                <h3>Building Trust Through Digital Armor</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="generators">
+        <div class="generatorpage">
+            <div class="heading">
+                <h1>GENERATORS</h1>
+            </div>
+
+            <div class="generator">
+                <div class="main1 main" onclick="redirectToPasswordPage()">
+                    <img src="img1.png">
+                    <h1>Password Generator</h1>
+                </div>
+                <div class="main2 main" onclick="redirectToQRCodePage()">
+                    <img src="img2.png">
+                    <h1>QR Code Generator</h1>
+                </div>
+                <div class="main3 main" onclick="redirectToOTPPage()">
+                    <img src="img3.png">
+                    <h1>OTP Generator</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="About">
+        <div class="about">
+            <h1>ABOUT US</h1>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to <b>
+                    CyberShieldHub</b>, a versatile online tool that empowers users with the ability to
+                generate secure One-Time Passwords (OTPs), robust passwords, and convenient QR codes.
+                Our platform is designed to cater to a wide range of users, providing essential tools
+                for enhancing digital security and streamlining everyday tasks. Whether you're looking
+                to fortify your accounts with strong passwords, quickly generate a unique OTP, or
+                create QR codes for seamless information sharing, <b>CyberShieldHub</b> has you covered.
+                <b>CyberShieldHub</b> serves as an opportunity to provide users with essential information
+                about the website, its purpose, and its creators.
+            </p>
+            <a href="about.html"><button class="btn1">Know more</button></a>
+        </div>
+    </section>
+
+    <section id="Contact">
+        <div class="contact">
+            <div class="logoimg2">
+                <img src="logo2.png">
+                <h1>CYBERSHIELDHUB</h1>
+                <h3>BUILDING TRUST THROUGH DIGITAL ARMOR</h3>
+            </div>
+
+            <div class="follow">
+                <h1>CONTACT US ON</h1>
+                <div class="contactpage">
+                    <div class="media">
+                        <h2>SOCIAL MEDIA</h2>
+                        <div class="ig a1"><i class='bx bxl-instagram'></i>
+                            <h3>@CyberShieldHub</h3>
+                        </div>
+                        <div class="fb a1"><i class='bx bxl-facebook-circle'></i>
+                            <h3>@CyberShieldHub</h3>
+                        </div>
+                        <div class="tw a1"><i class='bx bxl-twitter'></i>
+                            <h3>@CyberShieldHub</h3>
+                        </div>
+                    </div>
+
+                    <div class="email">
+                        <h2>EMAIL</h2>
+                        <h3>CyberShieldHub@gmail.com</h3>
+                        <h3>shrikantPatil@gmail.com</h3>
+                        <h3>somajpatil@gmail.com</h3>
+                    </div>
+
+                    <div class="phone">
+                        <h2>PHONE</h2>
+                        <h3>+91 9324723432</h3>
+                        <h3>+91 7204908194</h3>
+                        <h3>+91 6366317156</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function () {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                navbar.style.top = "-80px";
+            } else {
+                navbar.style.top = "0";
+            }
+            lastScrollTop = scrollTop;
+        })
+
+        function redirectToPasswordPage() {
+            window.location.href = "password.html";
+        }
+        function redirectToQRCodePage() {
+            window.location.href = "qrcode.html";
+        }
+        function redirectToOTPPage() {
+            window.location.href = "otp.html";
+        }
+    </script>
+</body>
+
+</html>

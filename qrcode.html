@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberShildHub QRCode Generator</title>
+    <link rel="stylesheet" href="qrcode.css">
+</head>
+
+<body>
+    <div class="logo">
+        <a href="index.html"><img src="logo2.png"></a>
+        <h1>CyberShieldHub</h1>
+    </div>
+    <div class="newdiv">
+        <div class="name">
+            <h1>QR Code Generator</h1>
+        </div>
+        <div class="container">
+            <div class="form">
+                <input type="text" id="inputData" placeholder="Enter data">
+                <div class="qr-code" id="qrCode"></div>
+                <button onclick="generateQRCode()">Generate QR Code</button>
+            </div>
+        </div>
+    </div>
+    <script src="qrcode.min.js"></script>
+    <script src="qrcode.js"></script>
+</body>
+
+</html>
